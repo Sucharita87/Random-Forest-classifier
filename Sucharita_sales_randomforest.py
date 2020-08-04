@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 13 00:14:36 2020
-
-@author: SUCHARITA
-"""
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -88,22 +82,5 @@ print(classification_report(y_train, y_pred)) # accuracy 100%
 y_test_pred = rf.predict(x_test)
 confusion_matrix(y_test,y_test_pred)
 #[[12, 13],
-#       [ 5, 50]]
+# [ 5, 50]]
 print(classification_report(y_test,y_test_pred)) # accuracy 78%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
