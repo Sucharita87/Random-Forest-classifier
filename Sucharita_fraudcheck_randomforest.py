@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 11 19:26:52 2020
-
-@author: SUCHARITA
-"""
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -59,9 +53,6 @@ print('After OverSampling, the shape of x_train: {}'.format(x_train1.shape)) #(7
 print('After OverSampling, the shape of y_train: {} \n'.format(y_train1.shape)) #(768, 1)
 y_train1.income.value_counts() # 0:384   1:384
 
-
-
-
 from sklearn.ensemble import RandomForestClassifier
 rf = RandomForestClassifier(n_jobs=3,oob_score=True,n_estimators=100,criterion="entropy")
 
@@ -90,7 +81,7 @@ print(classification_report(y_train, y_pred)) # accuracy 100%
 y_test_pred = rf.predict(x_test)
 confusion_matrix(y_test,y_test_pred)
 #[[86,  9],
-#       [23,  2]]
+# [23,  2]]
 print(classification_report(y_test,y_test_pred)) # accuracy 73%
 
 
